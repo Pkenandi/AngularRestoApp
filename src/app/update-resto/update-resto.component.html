@@ -1,0 +1,24 @@
+<div class="container">
+  <h1 class="text-muted "> Update Resto Form </h1>
+  <div class="row">
+
+    <div id="inner" class="col-6 mx-auto border border-dark rounded shadow-dark">
+      <form [formGroup]="UpdateForm" (ngSubmit)="UpdateResto()">
+
+        <div class="mb-6">
+          <label for="name" class="form-label"> Name </label>
+          <input formControlName="name" type="text" class="form-control" id="name" placeholder="KFC...">
+        </div>
+
+        <div class="mb-6">
+          <label for="address" class="form-label"> address </label>
+          <input formControlName="address" type="text" class="form-control" id="address" placeholder="Kinshasa ...">
+          <br>
+        </div>
+
+        <button type="submit" class="btn btn-outline-dark"> Update </button>
+      </form>
+    </div>
+  </div>
+
+</div>
