@@ -26,7 +26,12 @@ export class RestoService {
     return this.http.delete(`${this.url}/${id}`);
   }
   // tslint:disable-next-line:typedef
-  updateResto(id)
+  getId(id)
   {
+    return this.http.get(`${this.url}/${id}`);
+  }
+  updateRsto(id, data)
+  {
+    return this.http.put(`${this.url}/${id}`, data);
   }
 }

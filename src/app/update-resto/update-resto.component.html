@@ -1,5 +1,16 @@
 <div class="container">
   <h1 class="text-muted "> Update Resto Form </h1>
+
+  <div class="row">
+    <div class="col-6 mx-auto">
+      <div *ngIf="alert" class="alert alert-success alert-dismissible" role="alert">
+        <span (click)="close()" type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+          aria-hidden="true">&times;</span></span>
+        <strong>Success !/ </strong> Data has been Updated successfully
+      </div>
+    </div>
+  </div>
+
   <div class="row">
 
     <div id="inner" class="col-6 mx-auto border border-dark rounded shadow-dark">
@@ -16,7 +27,7 @@
           <br>
         </div>
 
-        <button type="submit" class="btn btn-outline-dark"> Update </button>
+        <button type="submit" class="btn btn-outline-dark"> Update</button>
       </form>
     </div>
   </div>

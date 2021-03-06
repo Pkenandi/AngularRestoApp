@@ -1,0 +1,21 @@
+form{
+  margin-bottom: 70px;
+  margin-top: 50px;
+}
+#inner{
+  border-left: #00aced;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+h1{
+  margin-left: 200px;
+}
+
+label, button{
+  font-weight: bold;
+}
+
+button{
+  width: 80px;
+}

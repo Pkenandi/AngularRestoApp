@@ -31,6 +31,11 @@ const routes: Routes = [
   {
     path: 'list',
     component: ListRestoComponent
+  },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
   }
 ];
 

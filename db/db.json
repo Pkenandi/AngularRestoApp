@@ -1,54 +1,90 @@
 {
   "Restaurants": [
     {
+      "name": "Monaluxe",
+      "address": "RDC",
       "id": 2,
-      "name": "KFC",
-      "address": "USA"
+      "image": "assets/img/img4.jpg"
     },
     {
       "id": 6,
       "name": "Main d'or",
-      "address": "Belgium"
+      "address": "Belgium",
+      "image": "assets/img/img5.jpg"
     },
     {
       "name": "Macdo",
       "address": "Paris",
-      "id": 8
+      "id": 8,
+      "image": "assets/img/img7.jpg"
     },
     {
       "id": 2,
       "name": "KFC",
-      "address": "USA"
+      "address": "USA",
+      "image": "assets/img/img6.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Burger King",
+      "address": "Belgium",
+      "image": "assets/img/img8.jpg"
+    },
+    {
+      "name": "Bella vista",
+      "address": "Kinshasa",
+      "id": 7,
+      "image": "assets/img/img2.jpg"
+    },
+    {
+      "name": "Macdo",
+      "address": "Paris",
+      "id": 8,
+      "image": "assets/img/img6.jpg"
     },
     {
       "id": 6,
       "name": "Main d'or",
-      "address": "Belgium"
+      "address": "Belgium",
+      "image": "assets/img/img5.jpg"
     },
     {
       "name": "Belle vie",
       "address": "Kinshasa",
-      "id": 7
+      "id": 7,
+      "image": "assets/img/img1.jpg"
     },
     {
       "name": "Macdo",
       "address": "Paris",
-      "id": 8
+      "id": 8,
+      "image": "assets/img/img7.jpg"
     },
     {
-      "id": 6,
-      "name": "Main d'or",
-      "address": "Belgium"
+      "name": "Liberty",
+      "address": "Monastir",
+      "id": 9,
+      "image": "assets/img/img2.jpg"
+    }
+  ],
+  "Users": [
+    {
+      "id": 1,
+      "name": "Prince",
+      "email": "kenandiprince@gmail.com",
+      "password": "781227"
     },
     {
-      "name": "Belle vie",
-      "address": "Kinshasa",
-      "id": 7
+      "name": "Cecile",
+      "email": "kenandi",
+      "password": "tRj7FYHfLGSBGAu",
+      "id": 2
     },
     {
-      "name": "Macdo",
-      "address": "Paris",
-      "id": 8
+      "name": "Grace",
+      "email": "grace@gmail.com",
+      "password": "tRj7FYHfLGSBGAu",
+      "id": 3
     }
   ]
 }

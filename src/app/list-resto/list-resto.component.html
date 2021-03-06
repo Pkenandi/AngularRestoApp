@@ -1,38 +1,40 @@
-<div class="container">
-  <h1 class="text-muted"> List Of Restaurants </h1>
-
+<div class="container content-row">
+  <h1 class="text-muted"> Our Restaurants </h1>
+   <hr>
   <div class="content">
     <div class="row">
 
-      <div class="col-md-3" *ngFor="let itr of collection">
+      <div class="col-md-3 d-flex" *ngFor="let itr of collection">
 
-        <div class="card shadow-lg" style="width: 15rem; margin-bottom: 10px">
+        <div class="card shadow-lg card-body flex-fill " style="width: 15rem; margin-bottom: 10px">
           <div class="inner">
-            <img src="assets/img/img3.jpg" class="card-img-top" alt="...">
+            <img src="{{itr.image}}" class="card-img-top" alt="...">
           </div>
 
           <div class="card-body">
             <h5 class="card-title">{{ itr.name}}</h5>
             <p class="card-text">{{ itr.address }}.</p>
 
-              <button (click)="deleteResto(itr.id)" class="btn btn-danger" type="button"
-                      data-toggle="tooltip" data-placement="top" title="Delete" style="margin-left: 20px">
-                <i class="fa fa-trash"></i>
-              </button>
+              <div class="buttons">
+                <button (click)="deleteResto(itr.id)" class="btn btn-danger" type="button"
+                        data-toggle="tooltip" data-placement="top" title="Delete" style="margin-left: 5px">
+                  <i class="fa fa-trash"></i>
+                </button>
 
-              <button class="btn btn-dark" type="button"
-                      data-toggle="tooltip" data-placement="top" title="Delete" style="margin-left: 20px">
-                <a routerLink="/update/{{itr.id}}">
-                  <i class="fa fa-edit"></i>
-                </a>
-              </button>
+                <button class="btn btn-dark" type="button"
+                        data-toggle="tooltip" data-placement="top" title="Delete" style="margin-left: 5px">
+                  <a routerLink="/update/{{itr.id}}">
+                    <i class="fa fa-edit"></i>
+                  </a>
+                </button>
 
-            <button class="btn btn-dark" type="button"
-                      data-toggle="tooltip" data-placement="top" title="Delete" style="margin-left: 20px">
-                <a routerLink="/add">
-                  <i class="fa fa-plus"></i>
-                </a>
-              </button>
+                <button class="btn btn-dark" type="button"
+                        data-toggle="tooltip" data-placement="top" title="Delete" style="margin-left: 5px">
+                  <a routerLink="/add">
+                    <i class="fa fa-plus"></i>
+                  </a>
+                </button>
+              </div>
 
           </div>
         </div>

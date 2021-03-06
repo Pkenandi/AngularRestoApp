@@ -1,7 +1,7 @@
 <div class="container">
 <h1 class="text-muted "> Add Resto Form </h1>
   <div class="row">
-    <div class="col-6">
+    <div class="col-6 mx-auto">
       <div *ngIf="alert" class="alert alert-success alert-dismissible" role="alert">
         <span (click)="close()" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></span>
         <strong>Success !/ </strong> Data has been sent successfully
@@ -11,20 +11,20 @@
 
   <div class="row">
 
-    <div class="col-6 justify-content-center">
+    <div id="inner" class="col-6 mx-auto border border-dark rounded shadow-dark">
       <form [formGroup]="AddForm" (ngSubmit)="AddResto()">
 
         <div class="mb-6">
-          <label for="name" class="form-label"> name </label>
+          <label for="name" class="form-label"> Name </label>
           <input formControlName="name" type="text" class="form-control" id="name" placeholder="KFC...">
         </div>
 
         <div class="mb-6">
-          <label for="address" class="form-label"> address </label>
+          <label for="address" class="form-label"> Address </label>
           <input formControlName="address" type="text" class="form-control" id="address" placeholder="Kinshasa ..."> <br>
         </div>
 
-        <button type="submit" class="btn btn-outline-dark"> Send </button>
+        <button type="submit" class="btn btn-outline-dark"> Add </button>
       </form>
     </div>
   </div>

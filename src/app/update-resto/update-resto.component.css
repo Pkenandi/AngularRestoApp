@@ -12,6 +12,14 @@ h1{
   margin-left: 200px;
 }
 
+label, button{
+  font-weight: bold;
+}
+
+button{
+  width: 80px;
+}
+
 .wrapper {
   margin-top: 80px;
   margin-bottom: 20px;
